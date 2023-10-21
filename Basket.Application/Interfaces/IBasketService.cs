@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Basket.Core.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,9 @@ namespace Basket.Application.Interfaces
 {
     public interface IBasketService
     {
+        BasketModel Create(BasketModel model);
+        void Delete(int id);
+        BasketModel Get(int id);
+        void Update(BasketModel model);
     }
 }
